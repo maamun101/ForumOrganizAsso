@@ -10,7 +10,7 @@ Pour cloner et exécuter le projet en local, suivez ces étapes :
 
 ```bash
 # 1. Cloner le repository
-git clone https://github.com/YahyaMudallal/ProjetTechnologieWeb-LU3IN017.git
+git clone https://github.com/maamun101/ForumOrganizAsso.git
 
 # 2. Se déplacer dans le dossier du projet
 cd ProjetTechnologieWeb-LU3IN017
