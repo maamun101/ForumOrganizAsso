@@ -1,0 +1,41 @@
+.sort-container {
+  display: flex;
+  flex-direction: column;
+  gap: 5px;
+  max-width: 300px;
+  font-family: 'Segoe UI', sans-serif;
+  font-size: 16px;
+  margin-top: 20px;
+  margin-bottom: 20px;
+}
+
+.sort-container label {
+  color: #1e3a8a;
+  /* bleu foncé */
+  font-weight: 500;
+}
+
+.sort-select {
+  padding: 10px 12px;
+  border: 1px solid #cbd5e1;
+  /* gris clair */
+  border-radius: 8px;
+  background-color: #f8fafc;
+  /* très clair */
+  color: #0f172a;
+  /* gris très foncé */
+  font-size: 15px;
+  appearance: none;
+  /* masque la flèche native sur certains navigateurs */
+  background-image: url("data:image/svg+xml,%3Csvg fill='black' viewBox='0 0 20 20' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath fill-rule='evenodd' d='M5.293 7.293a1 1 0 011.414 0L10 10.586l3.293-3.293a1 1 0 011.414 1.414l-4 4a1 1 0 01-1.414 0l-4-4a1 1 0 010-1.414z' clip-rule='evenodd'/%3E%3C/svg%3E");
+  background-repeat: no-repeat;
+  background-position: right 10px center;
+  background-size: 16px;
+}
+
+.sort-select:focus {
+  outline: none;
+  border-color: #60a5fa;
+  /* bleu plus vif */
+  box-shadow: 0 0 0 3px rgba(96, 165, 250, 0.3);
+}

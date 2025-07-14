@@ -1,0 +1,71 @@
+.Forum {
+    max-width: 1080px;
+    margin: auto;
+}
+
+.msgForm {
+    background-color: aliceblue;
+    padding: 20px;
+    justify-content: center;
+    border-radius: 3px;
+    font-family: "Gill Sans", sans-serif;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+}
+
+.commentForm {
+    margin-right: 30%;
+    padding: 10px;
+    justify-content: center;
+    border-radius: 3px;
+    font-family: "Gill Sans", sans-serif;
+}
+
+.msgForm textarea,
+.commentForm textarea {
+    margin-top: 5px;
+    width: 98%;
+    height: 150px;
+    padding: 7px;
+    resize: none;
+    border-radius: 3px;
+    border-style: solid;
+    border-color: black;
+    font-family: "Gill Sans", sans-serif;
+    font-size: 15px;
+}
+
+.msgForm .sendButton,
+.commentForm .sendButton {
+    width: 100px;
+    font-family: "Gill Sans", sans-serif;
+    background-color: #00ff2f;
+    border: none;
+    color: black;
+    padding: 5px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 16px;
+    border-radius: 10px;
+    transition-duration: 0.3s;
+    margin-top: 10px;
+}
+
+.msgForm .sendButton:hover,
+.commentForm .sendButton:hover {
+    background-color: #03931d;
+    color: white;
+    cursor: pointer;
+}
+
+.msgForm .sendButton:active,
+.commentForm .sendButton:active {
+    background-color: #00500f;
+    transform: scale(0.95);
+    color: white;
+}
+
+.msgForm .errorMsg,
+.commentForm .errorMsg {
+    color: red;
+}
