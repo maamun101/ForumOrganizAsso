@@ -1,0 +1,56 @@
+.User {
+    background-color: aliceblue;
+    /* width: 600px; */
+    margin-top: 1%;
+    /* margin-left: 30%; */
+    /* margin-right: 30%; */
+    padding-left: 15px;
+    padding-right: 15px;
+    justify-content: center;
+    border-radius: 5px;
+    font-family: "Gill Sans", sans-serif;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 8px;
+    flex-wrap: wrap;
+    gap: 8px;
+    font-weight: 600;
+    color: #1e3a8a;
+    transition: color 0.2s;
+}
+
+
+.UserName:hover {
+    color: #1d4ed8;
+    text-decoration: underline;
+    cursor: pointer;
+}
+
+.User .deleteUserButton {
+    background-color: #c0392b;
+}
+
+.User .deleteUserButton:active {
+    background-color: #82170c;
+    transform: scale(0.95);
+    color: white;
+}
+
+.User .errorMsg {
+    color: red;
+}
+
+.User .userInfo {
+    display: flex;
+    align-items: center;
+}
+
+.User .userInfo img {
+    width: 2rem;
+    height: 2rem;
+    border-radius: 50%;
+    border: 1px solid #ccc;
+    margin-right: 8px;
+}

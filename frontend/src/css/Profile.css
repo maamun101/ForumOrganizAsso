@@ -1,0 +1,267 @@
+.profile {
+  max-width: 1017px;
+  margin: auto;
+  padding: 2rem;
+  font-family: "Gill Sans", sans-serif;
+  background-color: #f9f9f9;
+  border-radius: 5px;
+  box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+}
+
+.user-info {
+  display: flex;
+  align-items: center;
+  margin-bottom: 2rem;
+  gap: 1.5rem;
+}
+
+.profile-pic {
+  width: 120px;
+  height: 120px;
+  border-radius: 50%;
+  border: 2px solid #555;
+  object-fit: cover;
+}
+
+.user-info p {
+  margin: 0.2rem 0;
+  font-size: 1rem;
+}
+
+.user-messages {
+  border-top: 1px solid #ccc;
+  padding-top: 1rem;
+}
+
+.user-messages ul {
+  list-style: none;
+  padding: 0;
+}
+
+.user-messages li {
+  padding: 1rem;
+  margin-bottom: 1rem;
+  background-color: white;
+  border: 1px solid #ddd;
+  border-radius: 8px;
+  position: relative;
+}
+
+.user-messages p {
+  margin: 0 0 0.5rem 0;
+}
+
+.user-messages small {
+  color: #666;
+  font-size: 0.9rem;
+}
+
+.user-messages button {
+  position: absolute;
+  right: 1rem;
+  top: 1rem;
+  background-color: #e74c3c;
+  color: white;
+  border: none;
+  padding: 0.3rem 0.8rem;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+.user-messages button:hover {
+  background-color: #c0392b;
+}
+
+.user-messages button:active {
+  background-color: #82170c;
+  transform: scale(0.95);
+  color: white;
+}
+
+.error {
+  color: red;
+  margin-bottom: 1rem;
+}
+
+.profile-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  gap: 2rem;
+  /* space between the two blocks */
+  margin-bottom: 1.5rem;
+}
+
+.edit-button {
+  background: #dee0e3;
+  color: black;
+  display: inline-flex;
+  align-items: center;
+  gap: 0.5rem;
+
+  padding: 8px 16px;
+  border: none;
+  border-radius: 8px;
+
+  font-weight: 600;
+  font-size: 0.95rem;
+
+  border: none;
+  cursor: pointer;
+
+  transition: background-color 0.2s;
+}
+
+.edit-button:hover {
+  background-color: #c1c5ca;
+  transition: background-color 0.2s;
+  transform: none;
+}
+
+.edit-button:active {
+  transform: scale(0.98);
+}
+
+
+.edit-icon {
+  width: 1rem;
+  height: 1rem;
+  object-fit: contain;
+}
+
+
+.EditProfile {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  margin-bottom: 1rem;
+}
+
+.EditProfile form {
+  display: flex;
+}
+
+.EditProfile form label {
+  align-content: center;
+}
+
+.EditProfile input {
+  padding: 0.3rem;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  margin-left: 0.5rem;
+}
+
+.EditProfile label {
+  margin-left: 1.5rem;
+}
+
+.EditProfile button {
+  margin-left: 0.5rem;
+}
+
+.EditProfile .valider {
+  background-color: green;
+}
+
+.EditProfile .valider:hover {
+  background-color: rgb(0, 143, 0);
+  transition: background-color 0.3s ease, transform 0.2s ease;
+  transform: scale(1.02);
+}
+
+.EditProfile .valider:active {
+  background-color: rgb(0, 110, 0);
+  transform: scale(0.98);
+  color: white;
+}
+
+.EditProfile .deleteButton {
+  background-color: rgb(216, 12, 12);
+  color: white;
+}
+
+.EditProfile .deleteButton:hover {
+  background-color: rgb(246, 24, 24);
+  transition: background-color 0.3s ease, transform 0.2s ease;
+  transform: scale(1.02);
+}
+
+.EditProfile .deleteButton:active {
+  background-color: rgb(195, 11, 11);
+  transform: scale(0.98);
+  color: white;
+}
+
+.avatar-uploader {
+  position: relative;
+  width: 120px;
+  /* adjust size as you like */
+  height: 120px;
+  border-radius: 50%;
+  overflow: hidden;
+  cursor: pointer;
+  transition: box-shadow 0.2s;
+}
+
+.avatar-uploader:hover {
+  box-shadow: 0 0 0 3px rgba(0, 123, 255, 0.5);
+}
+
+.avatar-img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  display: block;
+}
+
+/* Overlay camera icon */
+.avatar-overlay {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: rgba(0, 0, 0, 0.4);
+  color: white;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  opacity: 0;
+  transition: opacity 0.2s;
+}
+
+.avatar-uploader:hover .avatar-overlay {
+  opacity: 1;
+}
+
+/* Hide the real file input */
+.avatar-input {
+  display: none;
+}
+
+
+
+/* Responsive styles */
+@media (max-width: 970px) {
+  .EditProfile {
+    flex-direction: column;
+    margin-bottom: 30px;
+  }
+
+  .edit-profile-form form {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-top: 1rem;
+    gap: 0.2rem;
+  }
+
+}
+
+@media (max-width: 640px) {
+  .hideEditTxt {
+    display: none;
+  }
+
+}

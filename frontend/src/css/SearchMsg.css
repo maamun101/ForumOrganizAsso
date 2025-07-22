@@ -1,0 +1,87 @@
+.searchZone {
+    display: flex;
+    justify-content: center;
+}
+
+.searchBar {
+    display: flex;
+    gap: 0.8rem;
+    align-items: center;
+    background-color: white;
+    padding: 0.12rem 1rem;
+    border-radius: 30px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+}
+
+.searchInput {
+    width: 350px;
+    max-width: 100%;
+}
+
+
+.searchBar input[type="text"],
+.searchBar input[type="date"] {
+    border: none;
+    padding: 0.3rem;
+    border-radius: 20px;
+    background-color: #f0f0f0;
+    font-size: 0.9rem;
+}
+
+.searchBar input:focus {
+    outline: none;
+    background-color: #e8e8e8;
+}
+
+
+.searchBar button {
+    background-color: #007bff;
+    color: white;
+    border: none;
+    padding: 0.15rem 1rem;
+    border-radius: 20px;
+    font-size: 1rem;
+    cursor: pointer;
+    transition: background-color 0.2s;
+}
+
+.searchBar .icon {
+    height: 1.5rem;
+    width: 1.5rem;
+    object-fit: contain;
+}
+
+.searchBar button:hover {
+    background-color: #0056b3;
+}
+
+.searchBar button:active {
+    background-color: #003f87;
+    transform: scale(0.96);
+}
+
+@media (max-width: 1650px) {
+    .searchInput {
+        width: 150px;
+        max-width: 100%;
+    }
+}
+
+
+.searchBar {
+    display: flex;
+    gap: 0.5rem;
+    align-items: center;
+}
+
+/* Make the text input flex-grow to fill space */
+.searchBar .searchInput {
+    flex: 1;
+}
+
+/* Hide date inputs on tablet/mobile */
+@media (max-width: 1050px) {
+    .searchBar input[type="date"] {
+        display: none;
+    }
+}
