@@ -1,10 +1,10 @@
-# 📌 Projet de Technologie Web
+# Projet de Technologie Web
 
 Ce projet fait partie du cours **Technologie du Web** et utilise **HTML, CSS, React, Express et MongoDB** pour développer une application web interactive.
 
 ---
 
-## 🚀 Installation et Exécution
+## Installation et Exécution
 
 Pour cloner et exécuter le projet en local, suivez ces étapes :
 
