@@ -6,7 +6,6 @@ import "../css/Header.css";
 import "../css/SearchMsg.css";
 import logoOrganizasso from "../assets/logoOrganizasso.png";
 import profileIcon from "../assets/profile_icon.svg";
-import hamburger from "../assets/hamburger.svg";
 import publicForumIcon from "../assets/public_forum_icon.svg";
 import privateForumIcon from "../assets/private_forum_icon.svg";
 import mulitUsersIcon from "../assets/mutiple_users_icon.svg";

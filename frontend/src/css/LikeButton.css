@@ -1,0 +1,46 @@
+.likeSection {
+  display: inline-flex;
+  align-items: center;
+  background: #f0f0f0;
+  /* léger fond pour mieux distinguer */
+  border-radius: 24px;
+  /* arrondi moderne */
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  user-select: none;
+  /* évite la sélection involontaire */
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+.likeSection:hover {
+  background: #ffe6e6;
+  /* léger survol rougeâtre */
+}
+
+.likeNumber {
+  font-weight: 600;
+  font-size: 1rem;
+  color: #333;
+  min-width: 24px;
+  /* espace fixe pour éviter saut quand ça change */
+  text-align: center;
+}
+
+.likeButton {
+  background: none;
+  border: none;
+  font-size: 1.2rem;
+  line-height: 1;
+  padding: 0;
+  cursor: pointer;
+  transition: transform 0.2s ease;
+  color: #e0245e;
+  /* rouge moderne pour le coeur */
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.likeButton:hover {
+  transform: scale(1.2);
+}
