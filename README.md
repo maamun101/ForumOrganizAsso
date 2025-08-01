@@ -13,7 +13,7 @@ Pour cloner et exécuter le projet en local, suivez ces étapes :
 git clone https://github.com/maamun101/ForumOrganizAsso.git
 
 # 2. Se déplacer dans le dossier du projet
-cd ProjetTechnologieWeb-LU3IN017
+cd ForumOrganizAsso
 
 # 3. Se déplacer dans la dossier frontend
 cd frontend
