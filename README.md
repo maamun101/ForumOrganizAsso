@@ -27,8 +27,8 @@ npm install axios
 # 5. Lancer le frontend
 npm run dev
 
-# 6. Se déplacer dans le dossier backend
-cd ../backend
+# 6. Dans une nouvelle fenêtre de terminal, se déplacer dans le dossier backend
+cd backend
 
 # 7. Installer express
 npm install express
